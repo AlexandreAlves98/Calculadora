@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  
+}
+
+body{
+  background-color: hsl(221, 19%, 30%);
+  transition: .8s;
+
+}
+
+
+
+.container{
+  margin-top: 4rem;
+  
+}
+.h1{
+  margin-left:37% ;
+  color:  rgb(251, 231, 231);
+
+  
+}
+.visor{
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  outline: 0;
+  border: none;
+  
+}
+
+.display{
+  height: 100px;
+  width: 500px;
+  border-radius: .5rem;
+  border: none;
+  background-color: rgba(19, 24, 37, 0.8);
+  outline: unset;
+  padding-right: 1.5rem;
+  text-align: right;
+  font-size: 2rem;
+ 
+  color: rgb(250, 233, 233);
+}
+.calculadora{
+  width: 500px;
+  height: 400px;
+  background-color: rgba(35, 47, 80, 0.8);
+  margin: 0 auto;
+  border-radius: .4rem;
+  padding: .5rem;
+ 
+}
+.btn{
+ width: 90px;
+ height: 50px;
+ border-radius: .5rem;
+ border: none;
+ margin-left: .7rem;
+ box-shadow: 1px 3px 3px rgb(16, 16, 16);
+ background-color:  rgb(251, 231, 231);
+ font-size: 1.3rem;
+ cursor: pointer;
+ outline: unset;
+ 
+}
+.btn:hover{
+  background-color:  rgb(222, 210, 210);
+}
+.btn-clear,
+.btn-eq{
+ width: 207px;
+}
+.btn-del{
+  background-color: hsl(220, 27%, 43%);
+  color:rgb(250, 233, 233);
+}
+.btn-del:hover,
+.btn-clear:hover{
+  background-color:  hsl(221, 27%, 36%);
+}
+.btn-clear{
+  background-color: hsl(221, 27%, 44%);
+  color:rgb(250, 233, 233);
+}
+.btn-eq{
+  background-color: hsl(6, 88%, 57%);
+  color: rgb(250, 233, 233);
+}
+.btn-eq:hover{
+  background-color: hsl(6, 64%, 50%);
+}
+
+/* Active */
+body.active{
+  background-color: hsl(0, 0%, 87%);
+  transition: .8s;
+}
+.toggle{
+  position: relative;
+  display: block;
+  left: 900px;
+  bottom:30px ;
+  width: 70px;
+  height:35px;
+  border-radius: 160px;
+  background-color: antiquewhite;
+  transition: 0.5s;
+  box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+              inset 0 8px 8px  rgba(0,0,0,0.1),
+              inset 0 4px 4px rgba(0,0,0,0.05);
+  background-color: rgba(19, 24, 37, 0.8);
+  cursor: pointer;
+}
+ .indicador{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(73, 85, 117, 0.8);
+  border-radius: 50%;
+  box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+  inset 0 8px 8px  rgba(0,0,0,0.1),
+  inset 0 -4px 4px rgba(0,0,0,0.05);
+  transform: scale(.9);
+  transition: .8s;
+}
+.toggle.active .indicador{
+  left:35px;
+  background-color: rgb(240, 235, 235);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+              inset 0 4px 4px rgba(255,255,255,0.2),
+              inset 0 -10px 4px rgba(255,255,255,0.2);
+}
+.toggle.active{
+  background-color: rgb(184, 184, 184);
+  
+  box-shadow: inset 0 2px 60px rgba(0,0,0,0.1),
+              inset 0 2px 8px rgba(0,0,0,0.1),
+              inset 0 -4px 4px rgba(0,0,0,0.05);
+}
+.h1.active{
+  color: rgb(0, 0, 0);
+  transition: 2s;
+}
+.display.active{
+ background-color: rgb(81, 81, 81);
+ 
+}
+.calculadora.active{
+  background-color: rgb(97, 97, 97);
+}
+.btn-del.active,
+.btn-clear.active{
+  background-color: hsl(23, 100%, 50%);
+  color:rgb(25, 25, 25);
+}
+.btn-del.active:hover,
+.btn-clear.active:hover{
+  background-color: hsl(23, 99%, 54%);
+
+}
+.btn-eq.active{
+  background-color:  rgb(251, 231, 231);
+  color: #000;
+}
+.btn-eq.active:hover{
+  background-color:  rgb(222, 210, 210);
+
+  
+
+
+}
+
+
+@media(max-width: 1280px){
+  .container{
+    margin-top: 10rem;
+  }
+  .h1{
+    margin-left: 31%;
+  }
+  .toggle{
+    position: relative;
+    left: 64%;
+  }
+}
+@media(max-width: 920px){
+  
+  .h1{
+    margin-left: 23%;
+  }
+  .toggle{
+    position: relative;
+    left: 69%;
+  }
+}
+@media(max-width: 850px){
+  
+  .h1{
+    margin-left: 19%;
+  }
+  .toggle{
+    position: relative;
+    left: 71%;
+  }
+}
+@media(max-width: 780px){
+  
+  .h1{
+    margin-left: 18%;
+  }
+  .toggle{
+    position: relative;
+    left: 72%;
+  }
+}
+@media(max-width: 500px){
+
+  .container{
+    margin-left:1.8 rem;
+  }
+  .h1{
+    font-size: 1.8rem;
+    margin-top: -7rem; 
+    margin-left: -.1em;
+    
+  }
+  .toggle{
+    margin-left: 1rem;
+  }
+    
+    
+  .display{
+    width: 96%;
+
+    margin-left: -.5rem;
+    
+  }
+  .calculadora{
+    width: 94%;
+    height: 34.5rem;
+    margin-left: -.5rem;
+  }
+  .btn{
+    width: 75px;
+    height: 70px;
+    
+  }
+  .btn-clear,
+  .btn-eq{
+ width: 170px;
+}
+
+
+@media(max-width: 400px){
+  .container{
+    margin-left: 2rem;
+  }
+  
+ 
+  .display{
+    width: 92%;
+    
+  }
+
+  .calculadora{
+    width: 95%;
+  }
+  .btn{
+    width: 70px;
+    height: 65px;
+  }
+
+  .btn-clear,
+  .btn-eq{
+ width: 160px;
+}
+
+  
+
+}
+}
